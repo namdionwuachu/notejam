@@ -2,12 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
-    destination: .../html/
+    destination: /home/ec2-user/YOUR_PROJECT_DIR/html
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
       timeout: 300
       runas: ec2-user
+  ApplicationStart:    
     - location: scripts/start_server
       timeout: 300
       runas: ec2-user
