@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
+  - source: .../html/index.html
     destination: /home/ec2-user/YOUR_PROJECT_DIR/html
 hooks:
   BeforeInstall:
