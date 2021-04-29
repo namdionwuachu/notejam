@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /html/index.html
-    destination: /var/www/html
+    destination: /home/ec2-user/YOUR_PROJECT_DIR/html
 hooks:
   ApplicationStop:
     - location: scripts/stop_server
