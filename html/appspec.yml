@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ec2-user/YOUR_PROJECT_DIR/
+  - source: /index.html
+    destination: /home/ec2-user/YOUR_PROJECT_DIR/express/notejam/html/
 hooks:
   ApplicationStop:
     - location: scripts/stop_server
